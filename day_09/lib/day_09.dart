@@ -67,7 +67,7 @@ void main() {
   print(Luca.say());
   print(Kia.say());
   print(Hat.say());
-  Luca.direction=-160;
+  print(Luca.direction=-160);
 
   print(Luca.getDirection());
 
