@@ -35,7 +35,7 @@ class Sprite {
       side= "north west";
     } else if (this.direction < -179 && this.direction > -90) {
       side= "north east";
-    } else if (this.direction < -90 && this.direction > 0) {
+    } else if (this.direction < -90 && this.direction > -1) {
       side= "south east";
     }
     else {
@@ -67,8 +67,10 @@ void main() {
   print(Luca.say());
   print(Kia.say());
   print(Hat.say());
-  print(Luca.direction = -160);
+  Luca.direction=-160;
+
   print(Luca.getDirection());
+
   Luca.setSize(50);
   print(Luca.size);
 }
