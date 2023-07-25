@@ -43,3 +43,16 @@ class ImmutableWidget extends StatelessWidget {
     );
   }
 }
+
+Widget _buildDiamond(){
+  return Container(
+    foregroundDecoration: BoxDecoration(
+      shape: BoxShape.circle,
+      gradient: RadialGradient(
+        colors : [Colors.black12 , Colors.black],
+        center: Alignment(-0.3, 0.5)
+
+      ),
+      ),
+    );
+}
