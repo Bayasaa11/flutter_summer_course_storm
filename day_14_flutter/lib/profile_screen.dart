@@ -37,7 +37,7 @@ class ProfileScreen extends StatelessWidget {
             style: TextStyle(fontSize: 35, fontWeight: FontWeight.w600),
           ),
           _buildDetailsRow('Age', '4'),
-          _buildDetailsRow('Status', 'Good boy')
+          _buildDetailsRow('good dd', 'Good boy')
         ],
       ),
     );
