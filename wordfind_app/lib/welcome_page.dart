@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'gradient_letter.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -11,20 +12,33 @@ class WelcomePage extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/back1.png'),
-            ),
+                image: AssetImage('assets/images/back1.png'),
+                fit: BoxFit.cover //BoxFit.cover oruulna
+                ),
           ),
-          child: const Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [Padding(padding: EdgeInsets.only(top: 200)), Expanded(child: Column(
-              children: [Row(
-                mainAxisAlignment: MainAxisAlignment.center ,
-
-              )],
-            ))]
-          ),
+          child:  Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(padding: EdgeInsets.only(top: 200)),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                    GradientLetter( letter: 'W',),
+                        GradientLetter(letter: 'O'),
+                        GradientLetter(letter: 'R'),
+                        GradientLetter(letter: 'D')
+                        
+                      ],
+                    )
+                  ],
+                ))
+              ]),
         ),
       ),
     );
   }
+
 }
