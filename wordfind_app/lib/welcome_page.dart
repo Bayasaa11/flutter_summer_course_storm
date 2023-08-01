@@ -11,7 +11,8 @@ class WelcomePage extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/back1.png'),
+              image: AssetImage('assets/images/back1.png' )
+
             ),
           ),
           child: const Column(
