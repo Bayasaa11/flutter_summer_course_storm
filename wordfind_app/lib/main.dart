@@ -5,13 +5,9 @@ import 'package:wordfind_app/task_page.dart';
 
 void main() {
   runApp(MaterialApp(
+      title: 'Word Find Game',
+      theme: ThemeData(fontFamily: 'Ribeye'),
 
-    title: 'Word Find Game',
-    theme: ThemeData(fontFamily: 'Ribeye'),
-
-   //  home: WelcomePage(),
-    home : WelcomePage()
-  )
-
-  );
+      //  home: WelcomePage(),
+      home: const WelcomePage()));
 }

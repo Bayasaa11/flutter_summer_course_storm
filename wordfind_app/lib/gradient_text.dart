@@ -8,8 +8,9 @@ class GradientText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(' ',
+    return Text(text,
         style: TextStyle(
+            fontFamily: 'Ribeye',
             fontSize: size,
             foreground: Paint()
               ..shader = LinearGradient(colors: [Color(0xFFE86B02) , Color(0xFFFA9541)],
