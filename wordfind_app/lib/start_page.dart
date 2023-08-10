@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wordfind_app/gradient_text.dart';
 import 'package:wordfind_app/input_field.dart';
-import 'package:wordfind_app/models/task_model.dart';
 import 'package:wordfind_app/models/user_model.dart';
 import 'package:wordfind_app/task_page.dart';
 
