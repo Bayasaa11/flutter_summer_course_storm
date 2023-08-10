@@ -21,7 +21,6 @@ class _TaskPageState extends State<TaskPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     listQuestions = questions;
     user = widget.user;
     super.initState();

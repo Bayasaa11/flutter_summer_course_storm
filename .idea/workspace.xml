@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a6899f9-b5ac-4553-a408-dde79172741c" name="Changes" comment="" />
+    <list default="true" id="5a6899f9-b5ac-4553-a408-dde79172741c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_14_flutter/lib/profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/day_14_flutter/lib/profile_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordfind_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wordfind_app/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordfind_app/lib/task_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wordfind_app/lib/task_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordfind_app/lib/task_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wordfind_app/lib/task_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordfind_app/lib/welcome_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/wordfind_app/lib/welcome_page.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +36,7 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "last_opened_file_path": "/Users/storm-5/Desktop/flutter_summer_course_storm",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "settings.editor.selected.configurable": "dart.settings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
