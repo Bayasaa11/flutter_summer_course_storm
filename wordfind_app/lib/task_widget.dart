@@ -197,7 +197,7 @@ class TaskWidgetState extends State<TaskWidget> {
                             height: constraints.biggest.height,
                             child: TextButton(
                               child: Text(
-                                currentQues.arrayBtns[index].toUpperCase(),
+                                currentQues.arrayButtons[index].toUpperCase(),
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 25,
@@ -265,8 +265,8 @@ class TaskWidgetState extends State<TaskWidget> {
     final WSNewPuzzle newPuzzle = wordSearch.newPuzzle(wl, ws);
 
     if (newPuzzle.errors!.isEmpty) {
-      currentQues.arrayBtns = newPuzzle.puzzle!.expand((list) => list).toList();
-      currentQues.arrayBtns.shuffle();
+      currentQues.arrayButtons = newPuzzle.puzzle!.expand((list) => list).toList();
+      currentQues.arrayButtons.shuffle();
 
       bool isDone = currentQues.isDone;
 
@@ -299,7 +299,7 @@ class TaskWidgetState extends State<TaskWidget> {
         if (indexHint == countTemp - 1) {
           puzzle.hintShow = true;
           puzzle.currentValue = puzzle.correctValue;
-          puzzle.currentIndex = currentQues.arrayBtns
+          puzzle.currentIndex = currentQues.arrayButtons
               .indexWhere((btn) => btn == puzzle.correctValue);
         }
 
@@ -330,7 +330,7 @@ class TaskWidgetState extends State<TaskWidget> {
     if (currentIndexEmpty >= 0) {
       currentQues.puzzles[currentIndexEmpty].currentIndex = index;
       currentQues.puzzles[currentIndexEmpty].currentValue =
-      currentQues.arrayBtns[index];
+      currentQues.arrayButtons[index];
 
       if (currentQues.fieldCompleteCorrect()) {
         currentQues.isDone = true;
