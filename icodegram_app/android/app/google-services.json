@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "375646063206",
+    "project_id": "icodegrammbayasaaapp",
+    "storage_bucket": "icodegrammbayasaaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375646063206:android:831bba21c6ecfc55d4fba7",
+        "android_client_info": {
+          "package_name": "com.example.icodegram_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375646063206-blp2lg4q1g9ui6fmhmhugvkcc7mbqeno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhhEgKjZPyEgARTk9g4-X9QByLBElaFMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375646063206-blp2lg4q1g9ui6fmhmhugvkcc7mbqeno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
