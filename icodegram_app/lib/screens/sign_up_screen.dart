@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:icodegram_app/components/text_input_field.dart';
 import 'package:icodegram_app/resources/auth_methods.dart';
 
+import 'login_screen.dart';
+
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
@@ -60,12 +62,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               hintText: 'Repeat passwords',
             ),
             InkWell(
-              onTap: () => {
-                AuthMethods().signUpUser(
-                    email: _emailController.text,
-                    password: _passwordController.text,
-                    username: _usernameController.text)
-              },
+              onTap: onSignUp,
               child: Container(
                 width: double.infinity,
                 alignment: Alignment.center,
@@ -86,5 +83,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
         ),
       )),
     );
+  }
+
+  void onSignUp() async {
+    String result = await AuthMethods().signUpUser(
+        email: _emailController.text,
+        password: _passwordController.text,
+        username: _usernameController.text);
+    print('sign up');
+    print(result);
+    if (result == "success") {
+      print('Logged in');
+      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+    } else {
+      print(result);
+    }
   }
 }
